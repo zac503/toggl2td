@@ -1,0 +1,6 @@
+api_token=
+api_base_url=
+user_id=
+workspace_id=
+project_client_id=
+user_agent=
