@@ -1,1 +1,8 @@
 config.txt
+*.pdf
+get_user.py
+helper.py
+*.json
+td_config.py
+td_test.py
+td_time.py
