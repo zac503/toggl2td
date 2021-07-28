@@ -5,7 +5,7 @@ from requests.auth import HTTPBasicAuth
 import json
 import math
 
-class Togglapi:
+class TogglApi:
     def __init__(self,apiToken,apiBaseURL,userID,workspaceID,clientID,userAgent):
         self.apiToken = apiToken
         self.apiBaseURL = apiBaseURL

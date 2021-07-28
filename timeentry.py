@@ -1,6 +1,7 @@
-class TogglTimeEntry:
-    def __init__(self,date,project,duration):
+class TimeEntry:
+    def __init__(self,date,duration,togglproject = 'default toggl', tdproject = 'default td' ):
         self.duration = duration
         self.date = date
-        self.project = project
+        self.togglProject = togglproject
+        self.tdProject = tdproject
 
