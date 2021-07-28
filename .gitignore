@@ -1,4 +1,4 @@
-config.txt
+*.txt
 *.pdf
 get_user.py
 helper.py

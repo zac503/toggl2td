@@ -74,7 +74,7 @@ class TdApi:
         return applications
 
     def write_project_file(self,project_list):
-        filename = '{}-{}'.format(self.user_id,time.time())
+        filename = '{}-{}.txt'.format(self.user_id,time.time())
         file = open(filename,'a')
         for item in project_list:
             file.write('{},{}\n'.format(item['Name'],item['ID']))
