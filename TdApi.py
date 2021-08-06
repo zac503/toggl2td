@@ -28,7 +28,7 @@ class TdApi:
 
     def get_time (self,session):
         ###requests.get('https://wcu.teamdynamix.com/TDWebApi/api/time/report/{reportDate}/{uid}'.format())
-        end
+        pass
 
     def get_user(self,user):
         response = requests.get('https://wcu.teamdynamix.com/TDWebApi/api/people/lookup?searchText={searchText}&maxResults={maxResults}'.format(searchText = user,maxResults = '1'), headers={'Authorization':'Bearer {0}'.format(self.token)})
@@ -74,11 +74,18 @@ class TdApi:
         return applications
 
     def write_project_file(self,project_list):
-        filename = '{}-{}.txt'.format(self.user_id,time.time())
-        file = open(filename,'a')
-        for item in project_list:
-            file.write('{},{}\n'.format(item['Name'],item['ID']))
-        file.close()
+        filename = '{}-{}.txt'.format(self.user_id[0:7],time.time())
+        
+        try:
+            file = open(filename,'a')
+            for item in project_list:
+                file.write('{}|{}\n'.format(item['Name'],item['ID']))
+            file.close()
+            print('File {} written successfully'.format(filename))
+        except:
+            print('File Creation Failed')
+
+        
 
 
 

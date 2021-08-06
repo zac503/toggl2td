@@ -9,6 +9,7 @@ class TogglApi:
     def __init__(self,apiToken,apiBaseURL,userID,workspaceID,clientID,userAgent):
         self.apiToken = apiToken
         self.apiBaseURL = apiBaseURL
+        self.apiSummaryURL = 'https://api.track.toggl.com/reports/api/v2/summary'
         self.userID = userID
         self.workspaceID = workspaceID
         self.clientID = clientID
@@ -44,7 +45,10 @@ class TogglApi:
         #print(x)
         x = round(x,2)
         #print (x)
-        return x 
+        return x
+
+    def getUserProjects():
+        pass
 
     def GetPageCount(self):
         headers = {'Content-Type':'application/json'}
@@ -83,6 +87,7 @@ class TogglApi:
 
         if response.status_code == 200:
             data = json.loads(response.content.decode('utf-8'))
+            #print(data)
             return data
         else:
             return None
@@ -99,8 +104,9 @@ class TogglApi:
             if data is not None:
                 for entry in data['data']:
                     self.projectEntries.append(TimeEntry(entry['start'],
-                                                         entry['project'],
-                                                         self.formatDuration(entry['dur'])))
+                                                         self.formatDuration(entry['dur']),
+                                                         togglproject = entry['project'],
+                                                         togglID = entry['pid']))
             else:
                 print('Request Failed')
             i = i+1

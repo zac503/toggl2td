@@ -1,9 +1,18 @@
 import json
 from TogglApi import TogglApi
+from TdApi import TdApi
 import requests
 from requests.auth import HTTPBasicAuth
 from calendar import monthrange
+import csv
+from Translator import TimeTranslator
 
+#Setup the mapping file and load into memory
+translationFile = 'projDB.csv'
+timeTranslator = TimeTranslator()
+timeTranslator.loadTranslationFile(translationFile)
+
+#Load User Configuration
 user_config = {}
 
 with open('config.txt','r') as f:
@@ -19,6 +28,8 @@ toggl_API = TogglApi(user_config['api_token'],
 
 
 
+#Test 1 - Pull Toggl Entries - WORKING
+
 month = input("Month to gather? (format as 'x' example '3' for March) ")
 year = input("Which Year? (format as 'xxxx' example '2018') ")
 
@@ -26,33 +37,15 @@ toggl_API.SetReportMonth(month,year)
 pageCount = toggl_API.GetPageCount()
 entryList = toggl_API.GetProjectData()
 
-j = 0
-for P in entryList:
-    print('{} - {} - {} - {}'.format(P.date,P.togglProject,P.duration,P.togglID))
-    j = j+1
-print(j)
+#Test 2 - Load Entries into Translator - WORKING
+
+
+timeTranslator.loadTogglEntries(entryList)
+#timeTranslator.printCurrentEntryList()
+#timeTranslator.printCurrentTranslationMap()
+timeTranslator.translate()
+#Test 3 - Translate Entries
 
 
 
-"""
-#print(data)
-
-if data is not None:
-    print("Here's your info: ")
-    print(data['total_count'])
-    for entry in data['data']:
-        print('{} - {} - {}'.format(
-            entry['start'],
-            entry['project'],
-            formatDuration(entry['dur'])
-            ))
-else:
-    print('Request Failed')
-
-def formatDuration(rawDur):
-    x = float((rawDur/1000)/60/60)
-    print(x)
-    x = round(x,2)
-    print (x)
-    return x 
-"""
+#Test 4 - Load Entry to TeamDynamix
