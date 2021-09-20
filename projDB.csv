@@ -19,7 +19,7 @@ Belk 294 - Classroom Install,111450322,NO_TD_PROJECT,NO_TD_PROJECT
 Belk 381 - Interior Design Classrooms,147362353,NO_TD_PROJECT,NO_TD_PROJECT
 Belk 391 - Classroom Install,111450324,NO_TD_PROJECT,NO_TD_PROJECT
 Blackboard: single sign on authentication; in 1IM (analysis +),147359627,NO_TD_PROJECT,NO_TD_PROJECT
-Board of Governors (BoG) 2022,171091641,BOG IT Governance,418661
+Board of Governors (BoG) 2022,171091641,Board of Governors (BoG) 2022,42029
 BP Sim Lab Install CAE Learning System,155508056,NO_TD_PROJECT,NO_TD_PROJECT
 Camp 101A Renovation / Upgrade,160195382,NO_TD_PROJECT,NO_TD_PROJECT
 Camp 103m Upgrades,111450559,NO_TD_PROJECT,NO_TD_PROJECT
@@ -27,6 +27,7 @@ Camp 133B1 - Phase 1 Renovation,163623266,Camp 133B1 - Phase 1 Renovation,416123
 Camp 133C Update,111450611,NO_TD_PROJECT,NO_TD_PROJECT
 Camp 145 AV Upgrades,111450620,NO_TD_PROJECT,NO_TD_PROJECT
 Campus Digital Signage Remediation,157364249,NO_TD_PROJECT,NO_TD_PROJECT
+Campus Event Support 21-22,173743696,Campus Event Support 21-22,420993
 Campus IT Asset Inventory Update,120772340,NO_TD_PROJECT,NO_TD_PROJECT
 Center for Career and Professional Development Room 150 Upgrade,154433514,NO_TD_PROJECT,NO_TD_PROJECT
 CET Classroom Upgrades,127540942,NO_TD_PROJECT,NO_TD_PROJECT
@@ -50,7 +51,7 @@ Consolidated Electronic IT Presence,120773614,NO_TD_PROJECT,NO_TD_PROJECT
 Consolidated IT Presence,163054480,NO_TD_PROJECT,NO_TD_PROJECT
 Continuity of Operations Plan (CoOP),152791540,NO_TD_PROJECT,NO_TD_PROJECT
 Coulter 307 BYOD Installations,111451054,NO_TD_PROJECT,NO_TD_PROJECT
-Coulter E-Classroom Upgrades,160675498,NO_TD_PROJECT,NO_TD_PROJECT
+Coulter E-Classroom Upgrades,160675498,Coulter E-Classroom Upgrades to Hi-Flex Rooms,401921
 Covid-19 Clinic,167062798,NO_TD_PROJECT,NO_TD_PROJECT
 COVID - Fall Solutions and Communication,161570607,NO_TD_PROJECT,NO_TD_PROJECT
 CS Server Replacement Exploration,164512696,CS Server Replacement Exploration,412053
@@ -99,7 +100,7 @@ Killian 202 Upgrades,111452725,NO_TD_PROJECT,NO_TD_PROJECT
 Killian 306F AV Upgrades,113945200,NO_TD_PROJECT,NO_TD_PROJECT
 Learning Spaces IP Intercom Replacement,128352350,NO_TD_PROJECT,NO_TD_PROJECT
 Learning Spaces IP Intercom Replacement - Phase 2,155477447,NO_TD_PROJECT,NO_TD_PROJECT
-Lower Campus Residence Hall,148888347,NO_TD_PROJECT,NO_TD_PROJECT
+Lower Campus Residence Hall,148888347,Lower Campus Residence Hall,283748
 MakerFaire,120774089,NO_TD_PROJECT,NO_TD_PROJECT
 Managed Print Services 2018 Replacement,120774573,NO_TD_PROJECT,NO_TD_PROJECT
 Management and Personnel Actions,120587428,NO_TD_PROJECT,NO_TD_PROJECT
@@ -108,6 +109,7 @@ Meetings,13866425,NO_TD_PROJECT,NO_TD_PROJECT
 Migration to Office365 ProPlus,120784671,NO_TD_PROJECT,NO_TD_PROJECT
 Mobile Device Management Tool Analysis,120782330,NO_TD_PROJECT,NO_TD_PROJECT
 Moore Renovation Phase I,122586114,NO_TD_PROJECT,NO_TD_PROJECT
+Monthly Project Review Meeting,174199617,Monthly Project Review Meeting,420319
 myWCU Phase 3 & 4,120774673,NO_TD_PROJECT,NO_TD_PROJECT
 *Natural Science 227 Renovation,14174467,NO_TD_PROJECT,NO_TD_PROJECT
 Office/Email/Scheduling/Time Tracking,13866431,NO_TD_PROJECT,NO_TD_PROJECT
@@ -216,7 +218,7 @@ NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,KTLO - Apps and Web,236781
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Litigation Process - Policies and procedures for IT and Legal,406621
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Local Database Backups,277911
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Log Management System,391066
-NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Lower Campus Residence Hall,283748
+NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,,
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Microsoft Defender for Endpoint - Deployment,415055
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Microsoft Teams Roadmap and Governance for Campus,405260
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Monthly Project Review Meeting,420319
@@ -252,3 +254,4 @@ NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Vendor Management Contract DB Data Transfer,38
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Web Application Server Migration,396139
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,WiFi onboarding tool replacement,403875
 NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,Wired Port Authentication - Implementation,415611
+NO_TOGGL_PROJECT,NO_TOGGL_PROJECT,BOG IT Governance,418661

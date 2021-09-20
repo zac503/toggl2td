@@ -57,8 +57,18 @@ class TdApi:
                                 headers={'Authorization':'Bearer {0}'.format(self.token),
                                         'Content-Type':'text/json'},
                                 json=entry)
-        print('Add Time Entry Response:{0}'.format(response.content))    
-        
+        print('Add Time Entry Response:{0}'.format(response.content))
+
+    def create_time_entry(self,timeEntry):
+        tdEntry = [{'TimeID':'0',
+                      'Uid':self.user_id,
+                      'TimeTypeID':'2448',
+                      'Component':'1',
+                      'Minutes':timeEntry.duration,
+                      'ProjectID':timeEntry.tdID,
+                      'TimeDate':timeEntry.date}]
+        return tdEntry
+          
     def get_time_types(self):
         response = requests.get('https://api.teamdynamix.com/TDWebApi/api/time/types',
                                 headers={'Authorization':'Bearer {0}'.format(self.token),
